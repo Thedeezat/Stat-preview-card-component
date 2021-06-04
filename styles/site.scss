@@ -1,0 +1,185 @@
+$main-background: hsl(233, 47%, 7%);
+$card-background: hsl(244, 38%, 16%);
+$accent: hsl(277, 64%, 61%);
+
+$White:hsl(0, 0%, 100%);
+$main-paragraph: hsla(0, 0%, 100%, 0.75);
+$stat-headings: hsla(0, 0%, 100%, 0.6);
+$bold: 700;
+$light: 400;
+
+@mixin tablet {
+  @media screen and (max-width: 980px){
+    @content;
+  }
+}
+@mixin small-tab {
+  @media screen and (min-width: 616px) and (max-width: 980px){
+    @content;
+  }
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+}
+body{
+  background: $main-background;
+  color: $White;
+  font-family: 'Inter', sans-serif;
+}
+
+.main{
+  transform: translateY(30%);
+
+  @include tablet{
+    transform: translateY(10%);
+  }
+}
+.container{
+  width: 85%;
+  margin: auto;
+  &__card{
+    display: flex;
+    border-radius: 1rem;
+    background: $card-background;
+    justify-content: space-between;
+
+    @include tablet{
+      flex-wrap: wrap;
+      flex-direction: column-reverse;
+    }
+  }
+  @include small-tab{
+    max-width: 500px;
+  }
+}
+.card{
+  padding: 6rem 8rem 6rem 5rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+
+  @include tablet{
+    padding: 5rem 3rem;
+    width: 100%;
+  }
+  &__h2{
+    font-size: 3.3rem;
+    max-width: 35rem;
+    font-weight: $bold;
+    padding-bottom: 3.5rem;
+    &__span{
+      color: $accent;
+    }
+
+    @include tablet{
+      font-size: 2.5rem;
+      text-align: center;
+      margin: auto;
+    }
+  }
+  &__p{
+    max-width: 35rem;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    font-weight: $light;
+    color: $main-paragraph;
+
+    @include tablet{
+      font-size: 1.6rem;
+      margin: auto;
+      width: 100%;
+      text-align: center;
+    }
+  }
+  &__number{
+    display: flex;
+    justify-content: center;
+    padding-top: 7rem;
+
+    @include tablet{
+      flex-direction: column;
+      padding-top: 3rem;
+      margin: auto;
+      text-align: center;
+    }
+    &__1{
+      flex: 1;
+      @include tablet{
+        margin: 1rem 0;
+      }
+      h3{
+        font-weight: $bold;
+        font-size: 2.5rem;
+        padding-bottom: 0.7rem;
+      }
+      p{
+        color: $stat-headings;
+        font : {
+          font: 'Lexend Deca', sans-serif;
+          size: 1.3rem;
+          weight: $light;
+        }
+      }
+    }
+  }
+}
+.card__image{
+  position: relative;
+  img{
+    width: 100%;
+    height: 100%;
+    border : {
+     top-right-radius: 1rem;
+     bottom-right-radius: 1rem;
+    } 
+    @include tablet{
+      border : {
+        top-right-radius: 1rem;
+        top-left-radius: 1rem;
+        bottom-right-radius: 0;
+      } 
+    }
+   }
+}
+
+.bg_colour{
+  filter:  contrast(200%) brightness(50%) saturate(230%) sepia(10%) grayscale(20%) opacity(.4);
+  background: $accent;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  border : {
+    top-right-radius: 1rem;
+    bottom-right-radius: 1rem;
+  } 
+    @include small-tab{
+      max-height: 54rem;
+    }
+   @include tablet{
+    border : {
+      top-right-radius: 1rem;
+      top-left-radius: 1rem;
+      bottom-right-radius: 0;
+    } 
+   }
+}
+
+.attribution {
+  font-size: 1.5rem; 
+  color: $stat-headings;
+  position: relative;
+  top: 13rem;
+  text-align: center; 
+  a{
+   color: hsl(228, 45%, 44%); 
+  }
+}

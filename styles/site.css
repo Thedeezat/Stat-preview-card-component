@@ -1,0 +1,226 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: #090b1a;
+  color: white;
+  font-family: 'Inter', sans-serif;
+}
+
+.main {
+  -webkit-transform: translateY(30%);
+          transform: translateY(30%);
+}
+
+@media screen and (max-width: 980px) {
+  .main {
+    -webkit-transform: translateY(10%);
+            transform: translateY(10%);
+  }
+}
+
+.container {
+  width: 85%;
+  margin: auto;
+}
+
+.container__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 1rem;
+  background: #1b1938;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 980px) {
+  .container__card {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+@media screen and (min-width: 616px) and (max-width: 980px) {
+  .container {
+    max-width: 500px;
+  }
+}
+
+.card {
+  padding: 6rem 8rem 6rem 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 980px) {
+  .card {
+    padding: 5rem 3rem;
+    width: 100%;
+  }
+}
+
+.card__h2 {
+  font-size: 3.3rem;
+  max-width: 35rem;
+  font-weight: 700;
+  padding-bottom: 3.5rem;
+}
+
+.card__h2__span {
+  color: #aa5cdb;
+}
+
+@media screen and (max-width: 980px) {
+  .card__h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: auto;
+  }
+}
+
+.card__p {
+  max-width: 35rem;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+@media screen and (max-width: 980px) {
+  .card__p {
+    font-size: 1.6rem;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.card__number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 7rem;
+}
+
+@media screen and (max-width: 980px) {
+  .card__number {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 3rem;
+    margin: auto;
+    text-align: center;
+  }
+}
+
+.card__number__1 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+@media screen and (max-width: 980px) {
+  .card__number__1 {
+    margin: 1rem 0;
+  }
+}
+
+.card__number__1 h3 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  padding-bottom: 0.7rem;
+}
+
+.card__number__1 p {
+  color: rgba(255, 255, 255, 0.6);
+  font-font: 'Lexend Deca', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.card__image {
+  position: relative;
+}
+
+.card__image img {
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+@media screen and (max-width: 980px) {
+  .card__image img {
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 0;
+  }
+}
+
+.bg_colour {
+  -webkit-filter: contrast(200%) brightness(50%) saturate(230%) sepia(10%) grayscale(20%) opacity(0.4);
+          filter: contrast(200%) brightness(50%) saturate(230%) sepia(10%) grayscale(20%) opacity(0.4);
+  background: #aa5cdb;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+@media screen and (min-width: 616px) and (max-width: 980px) {
+  .bg_colour {
+    max-height: 54rem;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .bg_colour {
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 0;
+  }
+}
+
+.attribution {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.6);
+  position: relative;
+  top: 13rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=site.css.map */
