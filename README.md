@@ -23,7 +23,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Design solution for the Stats preview card component coding challenge](./design/solution.jpg)
 
 ### Links
 - Live Site URL: [Live Site URL](https://thedeezat.github.io/Stat-preview-card-component/)

@@ -18,8 +18,8 @@ body {
 }
 
 .main {
-  -webkit-transform: translateY(30%);
-          transform: translateY(30%);
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
 }
 
 @media screen and (max-width: 980px) {
@@ -30,7 +30,8 @@ body {
 }
 
 .container {
-  width: 85%;
+  width: 75%;
+  max-width: 1440px;
   margin: auto;
 }
 
@@ -63,7 +64,7 @@ body {
 }
 
 .card {
-  padding: 6rem 8rem 6rem 5rem;
+  padding: 6rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -71,10 +72,10 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: relative;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
 }
 
 @media screen and (max-width: 980px) {
@@ -88,7 +89,7 @@ body {
   font-size: 3.3rem;
   max-width: 35rem;
   font-weight: 700;
-  padding-bottom: 3.5rem;
+  padding-bottom: 2rem;
 }
 
 .card__h2__span {
@@ -104,7 +105,7 @@ body {
 }
 
 .card__p {
-  max-width: 35rem;
+  max-width: 40rem;
   font-size: 1.5rem;
   line-height: 2.5rem;
   font-weight: 400;
@@ -127,7 +128,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 7rem;
+  padding-top: 6rem;
 }
 
 @media screen and (max-width: 980px) {
@@ -216,7 +217,7 @@ body {
   font-size: 1.5rem;
   color: rgba(255, 255, 255, 0.6);
   position: relative;
-  top: 13rem;
+  top: 4rem;
   text-align: center;
 }
 
