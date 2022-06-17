@@ -21,7 +21,7 @@ Users should be able to:
 - View the optimal layout depending on their device's screen size
 
 ### Links
-- Live Site URL: [Live Site URL](https://thedeezat.github.io/Stat-preview-card-component/)
+- Live Site URL: [https://thedeezat.github.io/Stats-preview/](https://thedeezat.github.io/Stats-preview/)
 
 
 ### Built with
